@@ -99,3 +99,69 @@ for (let i = 0; i < array3.length; i++) {
     console.log(array3[i]);
   }
 }
+
+// ფუნქციები
+// პირველი დავალება
+
+function numPositive(...nums) {
+  let sum = 0;
+  for (let i=0; i<nums.length; i++) {
+    if (nums[i]>0) {
+      sum += nums[i];
+    }
+  }    
+  return sum;
+}
+
+console.log(numPositive(2, -9, 5, 11, -30, 100, -8, -11, -4, -6, 8))
+
+// მეორე დავალება
+
+function numSum(...nums) {
+  let sum=0;
+  for (let i=0; i<nums.length; i++) {
+    sum += nums[i]
+  }
+  return sum
+}
+
+console.log(numSum(10, 50, 6, 7, 8, 11, 6, 3, 9))
+
+// მესამე დავალება
+
+let user5 = {
+  firstName: 'giorgi',
+  lastName: 'saakadze',
+  age: 32,
+  isLoggedIn: true
+}
+
+function userInfo() {
+  if (user5.isLoggedIn === true) {
+    return user5.firstName + ' ' + user5.lastName
+  } return false
+}
+
+console.log(userInfo())
+
+// მეოთხე დავალება
+
+// პრველი ამოხსნა
+function maxNum(...nums) {
+  let max = nums [0]
+  for (let i=0; i<nums.length; i++) {
+    if (nums[i] > max) {
+      max = nums [i]
+    }
+  } return max;
+}
+
+console.log(maxNum(1,4,5,6,7,9,2,0,5,6,10,2))
+
+// // მეორე ამოხსნა
+
+function maxNums(...nums) {
+  return Math.max(...nums)
+}
+
+console.log(maxNums(1, 4, 5, 6, 7, 9, 2, 0, 5, 6, 10, 15, 2));
