@@ -136,17 +136,17 @@ let user5 = {
   isLoggedIn: true
 }
 
-function userInfo() {
-  if (user5.isLoggedIn === true) {
-    return user5.firstName + ' ' + user5.lastName
+function userInfo(obj) {
+  if (obj.isLoggedIn === true) {
+    return obj.firstName + ' ' + obj.lastName;
   } return false
 }
 
-console.log(userInfo())
+console.log(userInfo(user5))
 
 // მეოთხე დავალება
 
-// პრველი ამოხსნა
+// პირველი ამოხსნა
 function maxNum(...nums) {
   let max = nums [0]
   for (let i=0; i<nums.length; i++) {
